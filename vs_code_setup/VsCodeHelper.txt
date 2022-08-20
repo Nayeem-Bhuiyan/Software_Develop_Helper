@@ -1,0 +1,36 @@
+1 Install Extension from vs Code: Prettier - Code formatter,ESLint
+
+2 Edit Settings.json(from Setting of vs code)(search in windows : %APPDATA%\Code\User\settings.json) :
+
+// config related to code formatting
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+"eslint.workingDirectories": [{ "mode": "auto" }],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "tabnine.experimentalAutoImports": true,
+  "files.autoSave": "afterDelay"
+}
+
+
+3 Install Dev Dependency Inside Project Folder :
+
+npm add -D eslint prettier
+npx install-peerdeps --dev eslint-config-airbnb-base
+npm add -D eslint-config-prettier eslint-plugin-prettier
+
+4 copy and paste inside project root folder:
+
+.eslintrc.json
+
+6 select LF instead of CRLF right-bottom of vs code
+
+5 HelpVideo:https://www.youtube.com/watch?v=J5sCarsKX1s
