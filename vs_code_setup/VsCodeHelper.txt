@@ -2,6 +2,7 @@
 
 2 Edit Settings.json(from Setting of vs code)(search in windows : %APPDATA%\Code\User\settings.json) :
 
+
 // config related to code formatting
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -11,6 +12,8 @@
     "editor.defaultFormatter": null
   },
 "eslint.workingDirectories": [{ "mode": "auto" }],
+"javascript.preferences.quoteStyle": "single",
+"typescript.preferences.quoteStyle": "single",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.organizeImports": true
